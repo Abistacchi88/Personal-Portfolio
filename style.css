@@ -1,0 +1,245 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  margin: 0;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+
+}
+
+#logo-top {
+  width: 75vw;
+  margin-left: 40px;
+}
+
+#personal-logo{
+    height: 100%;
+    width: 250px;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Barra navigazione  */
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+li{
+  list-style: none;
+  text-align: -webkit-match-parent;
+}
+
+a{
+  text-decoration: none;
+  padding: 2rem;
+  font-size: 25px;
+}
+
+.container{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+}
+
+/* Sezione intro  */
+#intro{
+  background: url("https://cdn.pixabay.com/photo/2014/08/12/20/40/moon-416973_960_720.jpg") no-repeat center bottom;
+  background-size: cover;
+  max-width: 100%;
+  height: 100vh;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-attachment: fixed;
+
+}
+
+h5{
+  font-family: "poppins-bold", sans-serif;
+  color: #cc005f;
+  font-size: 2.3rem;
+  line-height: 1.565;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+}
+
+/* Animazione h5 */
+h5 {
+  animation: pulse 5s;
+}
+
+@keyframes pulse {
+  0% {
+    color: white;
+  }
+  100% {
+    color: #cc005f;
+  }
+}
+
+#intro-text h1{
+  font-size: 84px;
+}
+
+#intro-text h2{
+ margin-top: 50px;
+ font-size: 40px;
+ letter-spacing: 5px;
+ font-family: 'Spectral SC', serif;
+
+}
+
+/* Animazione h2 */
+#sliding-h2 {
+  animation-duration: 1.5s;
+  animation-name:slidein ;
+}
+
+@keyframes slidein {
+  from {
+    margin-right: : 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+
+
+/* Sezioni dei loghi linguaggi */
+#code-section{
+  margin-top: 50px;
+  display: block;
+  width: 100%;
+  left: 0;
+  bottom: 7.2rem;
+  font-size: 3.3rem;
+  padding: 0;
+}
+
+#code-section li{
+  display: inline-block;
+  margin: 0 20px;
+  padding: 0;
+}
+
+li{
+  transition: all 1s ease-out;
+}
+
+/* Sezioni dei progetti */
+
+#projects-section{
+  text-align: center;
+  padding: 10rem 2rem;
+  background: #45567d;
+}
+
+#projects-section-header{
+  font-size: 40px;
+  max-width: 620px;
+  margin: 0 auto 6rem auto;
+  letter-spacing: 5px;
+  border-bottom: 0.25rem solid;
+}
+
+.projects-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+
+}
+
+.project-image{
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+a .project-image:hover{
+  -webkit-filter: opacity(50%);
+}
+
+.project-title{
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+}
+
+a .project-title:hover{
+  color:#cc005f;
+}
+
+#pizza-color{
+  color:#cc005f;
+}
+
+/* Sezioni dei contatti */
+
+.contacts-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height:80vh;
+  background: #303840;
+  padding: 0 2rem;
+}
+
+#contacs-section-header{
+  margin-top: 100px;
+}
+
+
+#contacs-section-header h2{
+  font-size: 5rem;
+  text-align: center;
+}
+#contacs-section-header p{
+  font-style: italic;
+  font-size: 3rem;
+}
+
+.contact-link{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands";
+}
